@@ -1,0 +1,53 @@
+import styles from '@/app/workshop/page.module.css';
+
+import image from '@/public/pencil.png';
+import Navbar from '@/component/navbar/navbar';
+import Card from '@/component/card/card';
+import Footer from '@/component/footer/footer';
+
+import Image from 'next/image';
+
+export default function Workshop()
+{
+  return (
+    <div className={styles['workshop-container']}>
+      <Navbar />
+      
+      {/* <header className={styles.header}>Header</header> */}
+      <div className={styles['main']}>
+      <div className={styles['head-section']}>
+      <div className={styles['pic']}>
+                      <Image
+                          src={image}
+                          width={50}
+                          height={50}
+                          alt="pencil-image"
+                        />
+                  </div>
+            <div className={styles['head-name']}>
+                  <div className={styles['text']}>
+                    <div className={styles['educational-text']}>Education</div>
+                    <div className={styles['workshops-text']}>Workshops</div>
+                  </div>
+            </div>
+      </div>
+      <div className={styles['cards-container']}>
+        <Card title="Card 1 Title" content="Content for Card 1" />
+        <Card title="Card 2 Title" content="Content for Card 2" />
+        <Card title="Card 2 Title" content="Content for Card 2" />
+        <Card title="Card 2 Title" content="Content for Card 2" />
+        <Card title="Card 2 Title" content="Content for Card 2" />
+        <Card title="Card 2 Title" content="Content for Card 2" />
+        <Card title="Card 2 Title" content="Content for Card 2" />
+        <Card title="Card 2 Title" content="Content for Card 2" />
+        {/* Add more cards as needed */}
+      </div>
+      </div>
+      <Footer />
+
+      {/* Add your workshop content here */}
+    </div>
+  );
+};
+
+

@@ -1,0 +1,16 @@
+/* components/Card.module.css */
+
+.card {
+    width: 330.67px;
+    height: 400px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  
+
+  /* width: Fixed (330.67px)
+height: Fixed (574px)
+border: 2px */
